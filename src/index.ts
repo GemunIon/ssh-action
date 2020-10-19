@@ -67,7 +67,7 @@ async function executeCommand(ssh: node_ssh, command: string) {
   console.log(`Executing command: ${command}`);
 
   try {
-    await ssh.exec(command, { pty: true }, {
+    await ssh.exec(command, [{ pty: true }], {
       stream: "both",
       onStdout(chunk) {
         console.log(chunk.toString("utf8"));
