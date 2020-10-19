@@ -9278,7 +9278,7 @@ function executeCommand(ssh, command) {
     return __awaiter(this, void 0, void 0, function* () {
         console.log(`Executing command: ${command}`);
         try {
-            yield ssh.exec(command, [], {
+            yield ssh.exec(command, { pty: true }, {
                 stream: "both",
                 onStdout(chunk) {
                     console.log(chunk.toString("utf8"));
