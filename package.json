@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/node": "12.19.4",
-    "@zeit/ncc": "0.20.5",
+    "@zeit/ncc": "0.22.3",
     "prettier": "1.19.1",
     "typescript": "3.9.7"
   }
