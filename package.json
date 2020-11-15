@@ -32,9 +32,9 @@
     "ssh-exec": "2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^12.7.12",
-    "@zeit/ncc": "^0.20.5",
-    "prettier": "^1.19.1",
+    "@types/node": "12.19.4",
+    "@zeit/ncc": "0.20.5",
+    "prettier": "1.19.1",
     "typescript": "3.9.7"
   }
 }
