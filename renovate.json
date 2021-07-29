@@ -5,7 +5,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["@zeit/ncc"],
-      "allowedVersions": "!/0.22.3/"
+      "allowedVersions": "!/0.22.3/",
+      "rollbackPrs": true
     }
     ]
 }
