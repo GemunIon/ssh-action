@@ -1,5 +1,11 @@
 
 {
   "extends": ["github>trejgun/renovate-config"],
-  "requiredStatusChecks": null
+  "requiredStatusChecks": null,
+  "packageRules": [
+    {
+      "matchPackageNames": ["@zeit/ncc"],
+      "allowedVersions": "!/0.22.3/"
+    }
+    ]
 }
