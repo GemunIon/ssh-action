@@ -1,6 +1,6 @@
 
 {
-  "extends": ["github>trejgun/renovate-config"],
+  "extends": ["github>gemunion/renovate-config"],
   "requiredStatusChecks": null,
   "packageRules": [
     {
