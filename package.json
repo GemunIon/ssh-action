@@ -1,22 +1,20 @@
 {
-  "name": "@gemunion/ssh-action",
-  "version": "0.0.1",
-  "description": "Run commands on a remote server via SSH.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gemunion/ssh-action"
-  },
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
-    "pack": "ncc build"
-  },
+  "author": "trejgun",
   "bin": {
     "github-action-ssh": "dist/index.js"
   },
-  "preferGlobal": false,
+  "dependencies": {
+    "@actions/core": "1.2.0",
+    "node-ssh": "13.0.0",
+    "ssh-exec": "2.0.0"
+  },
+  "description": "Run commands on a remote server via SSH.",
+  "devDependencies": {
+    "@types/node": "18.17.6",
+    "@zeit/ncc": "0.22.3",
+    "prettier": "3.0.2",
+    "typescript": "5.1.6"
+  },
   "keywords": [
     "typescript",
     "github",
@@ -24,17 +22,19 @@
     "actions",
     "ssh"
   ],
-  "author": "trejgun",
   "license": "MIT",
-  "dependencies": {
-    "@actions/core": "^1.2.0",
-    "node-ssh": "^13.0.0",
-    "ssh-exec": "2.0.0"
+  "main": "lib/index.js",
+  "name": "@gemunion/ssh-action",
+  "preferGlobal": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gemunion/ssh-action"
   },
-  "devDependencies": {
-    "@types/node": "18.17.6",
-    "@zeit/ncc": "0.22.3",
-    "prettier": "3.0.2",
-    "typescript": "5.1.6"
-  }
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "pack": "ncc build"
+  },
+  "version": "0.0.1"
 }

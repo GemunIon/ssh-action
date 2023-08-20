@@ -1,5 +1,5 @@
 import * as core from '@actions/core';
-import node_ssh from 'node-ssh';
+import {NodeSSH} from 'node-ssh';
 import {keyboardFunction} from './keyboard';
 
 async function run() {
@@ -40,7 +40,7 @@ async function connect(
   passphrase: string,
   tryKeyboard: boolean
 ) {
-  const ssh = new node_ssh();
+  const ssh = new NodeSSH();
   console.log(`Establishing a SSH connection to ${host}.`);
 
   try {
@@ -63,7 +63,7 @@ async function connect(
   return ssh;
 }
 
-async function executeCommand(ssh: node_ssh, command: string) {
+async function executeCommand(ssh: NodeSSH, command: string) {
   console.log(`Executing command: ${command}`);
 
   try {
