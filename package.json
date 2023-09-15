@@ -4,13 +4,13 @@
     "github-action-ssh": "dist/index.js"
   },
   "dependencies": {
-    "@actions/core": "1.10.0",
+    "@actions/core": "1.10.1",
     "node-ssh": "13.1.0",
     "ssh-exec": "2.0.0"
   },
   "description": "Run commands on a remote server via SSH.",
   "devDependencies": {
-    "@types/node": "18.17.14",
+    "@types/node": "18.17.16",
     "@zeit/ncc": "0.22.3",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
