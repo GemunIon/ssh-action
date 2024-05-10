@@ -10,7 +10,7 @@
   },
   "description": "Run commands on a remote server via SSH.",
   "devDependencies": {
-    "@types/node": "20.12.10",
+    "@types/node": "20.12.11",
     "@zeit/ncc": "0.22.3",
     "prettier": "3.2.5",
     "typescript": "5.4.5"
